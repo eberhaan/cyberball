@@ -1,0 +1,12 @@
+<script>
+const params = new URLSearchParams(window.location.search);
+const condition = params.get("c");
+
+if (condition === "1") {
+    window.location.href = "inclusion/";
+}
+
+if (condition === "2") {
+    window.location.href = "exclusion/";
+}
+</script>
