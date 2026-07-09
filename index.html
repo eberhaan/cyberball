@@ -1,12 +1,73 @@
-<script>
-const params = new URLSearchParams(window.location.search);
-const condition = params.get("c");
+<!DOCTYPE html>
+<html>
+<head>
 
-if (condition === "1") {
-    window.location.href = "inclusion/";
-}
+<meta charset="UTF-8">
 
-if (condition === "2") {
-    window.location.href = "exclusion/";
-}
-</script>
+<title>Cyberball</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="game">
+
+<h2 id="title">
+Cyberball
+</h2>
+
+<p id="welcome">
+Willkommen!<br><br>
+
+In diesem Experiment wird menschliches Verhalten in einem Online-Spiel untersucht.
+Sie interagieren mit zwei anderen Spielern.<br><br>
+
+Wenn der Ball Ihnen zugeworfen wird,
+wählen Sie den Spieler aus, dem Sie den Ball zurückwerfen möchten.
+</p>
+
+
+<button id="start">
+Play
+</button>
+
+
+<div id="field" style="display:none">
+
+
+<div class="player" id="p1">
+Spieler 1
+</div>
+
+
+<div class="player human" id="p2">
+Ich
+</div>
+
+
+<div class="player" id="p3">
+Spieler 3
+</div>
+
+
+<div id="ball">
+⚪
+</div>
+
+
+<div id="choice"></div>
+
+
+</div>
+
+
+</div>
+
+
+<script src="cyberball.js"></script>
+
+
+</body>
+</html>
