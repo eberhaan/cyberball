@@ -1,21 +1,12 @@
-# Cyberball temporary files
-*.log
-*.tmp
-
-# Windows files
-Thumbs.db
-Desktop.ini
-
 # Participant data
 data/raw/
-results/
-logs/
 
-# Unity generated cache files
-Library/
-Temp/
-Obj/
+# Logs
+*.log
 
-# IDE files
-.vscode/
-.idea/
+# Temporary files
+*.tmp
+
+# Windows
+Thumbs.db
+Desktop.ini
