@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CBConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>41ff4f03-c59a-403a-81d5-f20683b235e1</ID>
+  <GameMode>3 Player</GameMode>
+  <ThrowCount>30</ThrowCount>
+  <IsChatEnabled>false</IsChatEnabled>
+  <AskIDOnGameEnd>false</AskIDOnGameEnd>
+  <ShouldShowStats>false</ShouldShowStats>
+  <LogFilePath>C:\Users\omkarpatil\Desktop\log.csv</LogFilePath>
+  <ShouldHandleRandomAssignment>false</ShouldHandleRandomAssignment>
+  <RunMode>Standalone</RunMode>
+  <PlayerDetails>
+    <PlayerNamesColors>
+      <PlayerNum>Player 1</PlayerNum>
+      <PlayerName>Mark</PlayerName>
+      <PlayerColor>#004080</PlayerColor>
+      <PlayerColorRed>0</PlayerColorRed>
+      <PlayerColorGreen>25</PlayerColorGreen>
+      <PlayerColorBlue>50</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 2</PlayerNum>
+      <PlayerName>Donny</PlayerName>
+      <PlayerColor>#FF8080</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>50</PlayerColorGreen>
+      <PlayerColorBlue>50</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 3</PlayerNum>
+      <PlayerName>Dan</PlayerName>
+      <PlayerColor>#FFFF00</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>0</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 4</PlayerNum>
+      <PlayerName>Player 4</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 5</PlayerNum>
+      <PlayerName>Player 5</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 6</PlayerNum>
+      <PlayerName>Player 6</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 7</PlayerNum>
+      <PlayerName>Player 7</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 8</PlayerNum>
+      <PlayerName>Player 8</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 9</PlayerNum>
+      <PlayerName>Player 9</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+  </PlayerDetails>
+  <Conditions>
+    <CBCondition>
+      <Name>Condition 1</Name>
+      <ScheduleType xsi:nil="true" />
+      <BgImagePath>C:\Users\omkarpatil\Downloads\SCENE04-1.jpg</BgImagePath>
+      <BGImageName>SCENE04-1.jpg</BGImageName>
+      <ScheduleName>OSS_0_30</ScheduleName>
+      <CustomSchedule>
+        <throws>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 1</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 2</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 3</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 4</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 5</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 6</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 7</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 8</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 9</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 10</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 11</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 12</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 13</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 14</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 15</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 16</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 17</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 18</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 19</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 20</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 21</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 22</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 23</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 24</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 25</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 26</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 27</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 28</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 29</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 30</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+        </throws>
+        <Name>OSS_0_30</Name>
+        <PlayerCount>3</PlayerCount>
+      </CustomSchedule>
+      <ShouldSpectate>false</ShouldSpectate>
+      <CustomConnectingMessage>Hello there. We are loading...</CustomConnectingMessage>
+      <CustomBallImage>C:\Users\omkarpatil\Desktop/magic_ball_78.png</CustomBallImage>
+    </CBCondition>
+    <CBCondition>
+      <Name>Condition 2</Name>
+      <ScheduleType xsi:nil="true" />
+      <BgImagePath>C:\Users\omkarpatil\Downloads\GloveDetail4.jpg</BgImagePath>
+      <BGImageName>GloveDetail4.jpg</BGImageName>
+      <ScheduleName>OSS_0_30</ScheduleName>
+      <CustomSchedule>
+        <throws>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 1</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 2</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 3</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 4</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 5</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 6</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 7</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 8</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 9</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 10</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 11</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 12</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 13</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 14</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 15</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 16</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 17</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 18</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 19</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 20</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 21</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 22</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 23</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 24</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 25</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 26</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 27</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 28</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 29</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 30</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+        </throws>
+        <Name>OSS_0_30</Name>
+        <PlayerCount>3</PlayerCount>
+      </CustomSchedule>
+      <ShouldSpectate>false</ShouldSpectate>
+      <CustomConnectingMessage>Loading yet again???</CustomConnectingMessage>
+      <CustomBoyImagesFolder>C:\Users\omkarpatil\Desktop\custom guy stick</CustomBoyImagesFolder>
+    </CBCondition>
+  </Conditions>
+  <ShouldShowPictures>false</ShouldShowPictures>
+</CBConfig>

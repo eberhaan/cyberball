@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CBConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>5fa4723d-e8bc-4540-8fe7-9aa6317130f1</ID>
+  <GameMode>3 Player</GameMode>
+  <ThrowCount>8</ThrowCount>
+  <IsChatEnabled>false</IsChatEnabled>
+  <AskIDOnGameEnd>false</AskIDOnGameEnd>
+  <ShouldShowStats>false</ShouldShowStats>
+  <LogFilePath>C:\Users\Omkar\Documents\1.csv</LogFilePath>
+  <ShouldHandleRandomAssignment>false</ShouldHandleRandomAssignment>
+  <RunMode>Standalone</RunMode>
+  <PlayerDetails>
+    <PlayerNamesColors>
+      <PlayerNum>Player 1</PlayerNum>
+      <PlayerName>Player 1</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 2</PlayerNum>
+      <PlayerName>Player 2</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 3</PlayerNum>
+      <PlayerName>Player 3</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 4</PlayerNum>
+      <PlayerName>Player 4</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 5</PlayerNum>
+      <PlayerName>Player 5</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 6</PlayerNum>
+      <PlayerName>Player 6</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 7</PlayerNum>
+      <PlayerName>Player 7</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 8</PlayerNum>
+      <PlayerName>Player 8</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+    <PlayerNamesColors>
+      <PlayerNum>Player 9</PlayerNum>
+      <PlayerName>Player 9</PlayerName>
+      <PlayerColor>#ffffff</PlayerColor>
+      <PlayerColorRed>100</PlayerColorRed>
+      <PlayerColorGreen>100</PlayerColorGreen>
+      <PlayerColorBlue>100</PlayerColorBlue>
+    </PlayerNamesColors>
+  </PlayerDetails>
+  <Conditions>
+    <CBCondition>
+      <Name>Condition 1</Name>
+      <ScheduleType xsi:nil="true" />
+      <ScheduleName>dep8</ScheduleName>
+      <CustomSchedule>
+        <throws>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 1</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>2</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>true</isChatMessage>
+            <msg>
+              <message>This is an Expt Message</message>
+              <sender>0</sender>
+              <duration>2.0</duration>
+            </msg>
+            <IsInstruction>true</IsInstruction>
+            <ThrowName>Instr. - This is an Expt Message</ThrowName>
+            <Delay>0</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 2</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>true</isChatMessage>
+            <msg>
+              <message>Hi All</message>
+              <sender>0</sender>
+              <duration>2.0</duration>
+            </msg>
+            <IsInstruction>true</IsInstruction>
+            <ThrowName>Instr. - Hi All</ThrowName>
+            <Delay>0</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 3</ThrowName>
+            <ThrowTo>Player 2 (Human)</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 4</ThrowName>
+            <ThrowTo>Any</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 5</ThrowName>
+            <ThrowTo>Player 3</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 6</ThrowName>
+            <ThrowTo>Player 2 (Human)</ThrowTo>
+            <Delay>4</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 7</ThrowName>
+            <ThrowTo>Any</ThrowTo>
+            <Delay>3</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>Throw 8</ThrowName>
+            <ThrowTo>Player 1</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>p1 to p2</ThrowName>
+            <ThrowTo>Player 2 (Human)</ThrowTo>
+            <Delay>5</Delay>
+          </CBThrow>
+          <CBThrow>
+            <isChatMessage>false</isChatMessage>
+            <IsInstruction>false</IsInstruction>
+            <ThrowName>p2 to any</ThrowName>
+            <ThrowTo>Any</ThrowTo>
+            <Delay>0</Delay>
+          </CBThrow>
+        </throws>
+        <Name>dep8</Name>
+        <PlayerCount>3</PlayerCount>
+      </CustomSchedule>
+      <ShouldSpectate>true</ShouldSpectate>
+    </CBCondition>
+  </Conditions>
+  <ShouldShowPictures>false</ShouldShowPictures>
+  <Email>simplycodesoftware@gmail.com</Email>
+</CBConfig>
