@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1260C427-0057-443F-85D9-9C10DDE346B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MonoCyberball</RootNamespace>
+    <AssemblyName>Cyberball-Config</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>c:\temp\jd.cb5\builds\Published Files\config-app\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://cyberballserver.azurewebsites.net/config-app/</InstallUrl>
+    <UpdateUrl>http://cyberballserver.azurewebsites.net/config-app/</UpdateUrl>
+    <ProductName>Cyberball 5</ProductName>
+    <PublisherName>Empirisoft Corporation</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>5.4.0.2</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MonoCyberballTest.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>33A6E4A441E9A9AC24100BA7E0050FF610044EFC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MonoCyberballTest_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomCyberboy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomCyberboy.Designer.cs">
+      <DependentUpon>FormCustomCyberboy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGetCBEID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGetCBEID.Designer.cs">
+      <DependentUpon>FormGetCBEID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessageProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessageProperties.Designer.cs">
+      <DependentUpon>FormMessageProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddMessage.Designer.cs">
+      <DependentUpon>FormAddMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreateSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreateSchedule.Designer.cs">
+      <DependentUpon>FormCreateSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNamesColors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNamesColors.Designer.cs">
+      <DependentUpon>FormNamesColors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProgress.Designer.cs">
+      <DependentUpon>FormProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSchedulesThrows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSchedulesThrows.Designer.cs">
+      <DependentUpon>FormSchedulesThrows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThrowProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThrowProperties.Designer.cs">
+      <DependentUpon>FormThrowProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThrowDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThrowDetails.Designer.cs">
+      <DependentUpon>FormThrowDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIMEAssistant.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomCyberboy.resx">
+      <DependentUpon>FormCustomCyberboy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGetCBEID.resx">
+      <DependentUpon>FormGetCBEID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMessageProperties.resx">
+      <DependentUpon>FormMessageProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddMessage.resx">
+      <DependentUpon>FormAddMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateSchedule.resx">
+      <DependentUpon>FormCreateSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNamesColors.resx">
+      <DependentUpon>FormNamesColors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProgress.resx">
+      <DependentUpon>FormProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSchedulesThrows.resx">
+      <DependentUpon>FormSchedulesThrows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThrowProperties.resx">
+      <DependentUpon>FormThrowProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThrowDetails.resx">
+      <DependentUpon>FormThrowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="MonoCyberballTest_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cyberball.Common\Cyberball.Common.csproj">
+      <Project>{13FCA9CE-0A9B-4E43-A2AF-474188B366BC}</Project>
+      <Name>Cyberball.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cyberball icon 256.png" />
+    <Content Include="favicon %281%29.ico" />
+    <None Include="Resources\catch.png" />
+    <None Include="Resources\idle-right.png" />
+    <None Include="Resources\throw-1.png" />
+    <None Include="Resources\throw-2.png" />
+    <None Include="Resources\throw-3.png" />
+    <None Include="Resources\throw-4.png" />
+    <None Include="Resources\Ball.png" />
+    <None Include="Resources\profile pic 128.jpg" />
+    <None Include="Resources\9pl.png" />
+    <None Include="Resources\8pl.png" />
+    <None Include="Resources\7pl.png" />
+    <None Include="Resources\6pl.png" />
+    <None Include="Resources\5pl.png" />
+    <None Include="Resources\4pl.png" />
+    <None Include="Resources\3pl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
