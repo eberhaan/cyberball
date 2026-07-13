@@ -1,83 +1,55 @@
 body {
-
     margin:0;
-    background:#eeeeee;
-    overflow:hidden;
     font-family:Arial;
-
+    background:#eeeeee;
 }
 
 
 #game {
-
-    width:100vw;
-    height:100vh;
-    position:relative;
-
+    width:900px;
+    margin:auto;
+    text-align:center;
 }
 
+
+#players {
+    margin-top:100px;
+    display:flex;
+    justify-content:space-around;
+}
 
 
 .player {
-
-    position:absolute;
-    text-align:center;
-
+    width:150px;
+    height:150px;
 }
 
 
-.player img {
-
-    width:120px;
-
+.avatar {
+    font-size:80px;
 }
 
 
-.player span {
-
-    display:block;
-    font-size:22px;
-    font-weight:bold;
-
+.human {
+    border:3px solid blue;
+    border-radius:20px;
 }
-
-
-
-#player1 {
-
-    left:120px;
-    bottom:120px;
-
-}
-
-
-
-#player2 {
-
-    right:120px;
-    bottom:120px;
-
-}
-
-
-
-#player3 {
-
-    left:50%;
-    top:80px;
-    transform:translateX(-50%);
-
-}
-
 
 
 #ball {
+    font-size:50px;
+    margin-top:40px;
+}
 
-    position:absolute;
 
-    width:50px;
+#message {
+    margin:30px;
+    font-size:22px;
+}
 
-    left:50%;
-    top:50%;
 
+button {
+    padding:15px;
+    margin:10px;
+    font-size:18px;
 }
