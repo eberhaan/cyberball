@@ -1,130 +1,191 @@
-const ball = document.getElementById("ball");
+// Cyberball 5 Web Version
 
 
-const positions = {
-
-    player1:{
-        x:180,
-        y:window.innerHeight-200
-    },
+let condition =
+    new URLSearchParams(window.location.search)
+    .get("condition")
+    || 1;
 
 
-    player2:{
-        x:window.innerWidth-220,
-        y:window.innerHeight-200
-    },
+let participant =
+    new URLSearchParams(window.location.search)
+    .get("participant")
+    || "test";
 
 
-    player3:{
-        x:window.innerWidth/2,
-        y:150
-    }
+let throwNumber = 0;
 
-};
+let maxThrows = 30;
 
 
-
-let sequence;
+let history=[];
 
 
 
-if(condition=="1")
-{
+const message =
+document.getElementById("message");
 
-    // Inclusion:
-    // Mensch bekommt Ball regelmäßig
 
-    sequence=[
-        "player1",
-        "player2",
-        "player1",
-        "player3",
-        "player1"
+const choices =
+document.getElementById("choices");
 
-    ];
+
+
+function startGame(){
+
+message.innerHTML =
+"Game started. You have the ball.";
+
+choices.style.display="block";
 
 }
 
+
+function throwBall(target){
+
+
+throwNumber++;
+
+
+history.push({
+    throw:throwNumber,
+    from:"human",
+    to:"player"+target
+});
+
+
+animateBall(target);
+
+
+
+setTimeout(()=>{
+
+
+aiTurn();
+
+
+},1500);
+
+
+
+}
+
+
+
+function animateBall(target){
+
+
+message.innerHTML =
+"You threw to Player "+target;
+
+
+}
+
+
+
+function aiTurn(){
+
+
+if(throwNumber>=maxThrows){
+
+endGame();
+return;
+
+}
+
+
+
+let target;
+
+
+
+if(condition==1){
+
+// INCLUSION
+// KI wirft häufig zum Menschen
+
+let r=Math.random();
+
+
+if(r<0.5)
+target="human";
 else
-{
+target="player"+(Math.random()<0.5?1:3);
 
-    // Exclusion:
-    // Mensch wird weniger berücksichtigt
 
-    sequence=[
-        "player1",
-        "player3",
-        "player3",
-        "player1",
-        "player3"
+}
 
-    ];
+
+else{
+
+
+// EXCLUSION
+// KI spielt hauptsächlich miteinander
+
+target=
+Math.random()<0.8
+?
+"player1"
+:
+"player3";
+
 
 }
 
 
 
-let index=0;
+history.push({
+
+throw:throwNumber,
+from:"AI",
+to:target
+
+});
 
 
 
-function throwBall(from,to)
-{
-
-    let start=positions[from];
-    let end=positions[to];
+message.innerHTML=
+"AI throws to "+target;
 
 
-    ball.animate(
 
-        [
+setTimeout(()=>{
 
-            {
-                left:start.x+"px",
-                top:start.y+"px"
-            },
+message.innerHTML=
+"Your turn";
 
-            {
-                left:end.x+"px",
-                top:end.y+"px"
-            }
+},1500);
 
-        ],
 
-        {
-            duration:1500,
-            fill:"forwards"
-
-        }
-
-    );
 
 }
 
 
 
-function nextThrow()
-{
-
-    let from=sequence[index];
-
-    let to=sequence[index+1];
+function endGame(){
 
 
-    if(!to)
-    {
-        index=0;
-        return;
-    }
+localStorage.setItem(
+"cyberball_"+participant,
+JSON.stringify(history)
+);
 
 
-    throwBall(from,to);
+
+message.innerHTML=
+"Finished";
 
 
-    index++;
+window.location.href=
+"finish.html?condition="
++condition
++"&throws="
++history.length;
+
+
 
 }
 
 
 
-setInterval(nextThrow,2500);
+startGame();
