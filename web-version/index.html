@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html lang="de">
-
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Cyberball</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <div id="game">
 
-    <div id="player1" class="player">
-        <img src="assets/idle-right.png">
-        <span>Player 1</span>
-    </div>
+<h1>Cyberball</h1>
+
+<div id="players">
+
+<div class="player" id="player1">
+    <div class="avatar">👤</div>
+    <div>Player 1</div>
+</div>
 
 
-    <div id="player2" class="player">
-        <img src="assets/idle-right.png">
-        <span>Player 2</span>
-    </div>
+<div class="player human" id="player2">
+    <div class="avatar">🙂</div>
+    <div>You</div>
+</div>
 
 
-    <div id="player3" class="player">
-        <img src="assets/idle-right.png">
-        <span>Player 3</span>
-    </div>
+<div class="player" id="player3">
+    <div class="avatar">👤</div>
+    <div>Player 3</div>
+</div>
+
+</div>
 
 
-    <img id="ball" src="assets/ball.png">
+<div id="ball">
+🏐
+</div>
+
+
+<div id="message">
+Loading...
+</div>
+
+
+<div id="choices">
+
+<button onclick="throwBall(1)">
+Throw to Player 1
+</button>
+
+<button onclick="throwBall(3)">
+Throw to Player 3
+</button>
+
+</div>
 
 
 </div>
 
 
-<script src="config.js"></script>
 <script src="game.js"></script>
-
 
 </body>
 </html>
